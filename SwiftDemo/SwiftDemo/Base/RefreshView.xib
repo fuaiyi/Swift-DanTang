@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jKD-dV-XDy" customClass="RefreshView" customModule="SwiftDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableview_loading" translatesAutoresizingMaskIntoConstraints="NO" id="GRF-kC-wy4">
+                    <rect key="frame" x="16" y="14" width="32" height="32"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="LOa-bC-SfG"/>
+                        <constraint firstAttribute="height" constant="32" id="YWL-4W-Le7"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在刷新ing..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqo-Kv-hbp">
+                    <rect key="frame" x="53" y="20" width="117" height="19.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6L-v6-7Oq" userLabel="TipView">
+                    <rect key="frame" x="0.0" y="0.0" width="170" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableview_pull_refresh" translatesAutoresizingMaskIntoConstraints="NO" id="HNP-Um-Yud">
+                            <rect key="frame" x="10" y="14" width="32" height="32"/>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="ESH-kg-uZ3"/>
+                                <constraint firstAttribute="width" constant="32" id="I9x-tr-hgh"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下拉刷新ing..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTf-a4-cdW">
+                            <rect key="frame" x="47" y="20" width="123" height="19.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="iTf-a4-cdW" firstAttribute="leading" secondItem="HNP-Um-Yud" secondAttribute="trailing" constant="5" id="3Ao-OZ-gtv"/>
+                        <constraint firstItem="HNP-Um-Yud" firstAttribute="centerY" secondItem="o6L-v6-7Oq" secondAttribute="centerY" id="9Te-lO-GYh"/>
+                        <constraint firstAttribute="trailing" secondItem="iTf-a4-cdW" secondAttribute="trailing" id="Mnz-8X-ZoE"/>
+                        <constraint firstItem="iTf-a4-cdW" firstAttribute="centerY" secondItem="o6L-v6-7Oq" secondAttribute="centerY" id="TjK-lK-MfG"/>
+                        <constraint firstAttribute="trailing" secondItem="iTf-a4-cdW" secondAttribute="trailing" id="Vci-xk-Sje"/>
+                        <constraint firstItem="iTf-a4-cdW" firstAttribute="centerY" secondItem="o6L-v6-7Oq" secondAttribute="centerY" id="dRb-97-mHq"/>
+                        <constraint firstItem="iTf-a4-cdW" firstAttribute="leading" secondItem="HNP-Um-Yud" secondAttribute="trailing" constant="5" id="f8y-cW-f1t"/>
+                        <constraint firstItem="HNP-Um-Yud" firstAttribute="leading" secondItem="o6L-v6-7Oq" secondAttribute="leading" constant="10" id="j8F-Ym-9Y4"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="TjK-lK-MfG"/>
+                            <exclude reference="Vci-xk-Sje"/>
+                            <exclude reference="f8y-cW-f1t"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="mqo-Kv-hbp" firstAttribute="centerY" secondItem="jKD-dV-XDy" secondAttribute="centerY" id="05o-LQ-fK9"/>
+                <constraint firstItem="o6L-v6-7Oq" firstAttribute="top" secondItem="jKD-dV-XDy" secondAttribute="top" id="ASI-zD-cus"/>
+                <constraint firstAttribute="bottom" secondItem="o6L-v6-7Oq" secondAttribute="bottom" id="MzJ-Wt-8mo"/>
+                <constraint firstItem="GRF-kC-wy4" firstAttribute="leading" secondItem="jKD-dV-XDy" secondAttribute="leading" constant="16" id="OfB-eZ-lmh"/>
+                <constraint firstAttribute="trailing" secondItem="o6L-v6-7Oq" secondAttribute="trailing" id="Oyv-Cl-0Gf"/>
+                <constraint firstItem="mqo-Kv-hbp" firstAttribute="leading" secondItem="GRF-kC-wy4" secondAttribute="trailing" constant="5" id="Uaf-pK-ebD"/>
+                <constraint firstAttribute="trailing" secondItem="mqo-Kv-hbp" secondAttribute="trailing" id="leG-2M-IEF"/>
+                <constraint firstItem="o6L-v6-7Oq" firstAttribute="leading" secondItem="jKD-dV-XDy" secondAttribute="leading" id="rO8-N6-2yf"/>
+                <constraint firstItem="GRF-kC-wy4" firstAttribute="centerY" secondItem="jKD-dV-XDy" secondAttribute="centerY" id="xMi-sJ-XJg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowIcon" destination="HNP-Um-Yud" id="1ES-j8-my4"/>
+                <outlet property="loadingView" destination="GRF-kC-wy4" id="Dqp-jT-B8e"/>
+                <outlet property="tipView" destination="o6L-v6-7Oq" id="1oS-i0-cV6"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="tableview_loading" width="32" height="32"/>
+        <image name="tableview_pull_refresh" width="32" height="32"/>
+    </resources>
+</document>

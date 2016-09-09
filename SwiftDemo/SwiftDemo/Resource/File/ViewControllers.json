@@ -1,0 +1,22 @@
+ [
+  {
+  "vcName": "DanTangViewController",
+  "title": "单糖",
+  "imageName": "TabBar_home_23x23_"
+  },
+  {
+  "vcName": "ProductViewController",
+  "title": "单品",
+  "imageName": "TabBar_gift_23x23_"
+  },
+  {
+  "vcName": "ClassifyViewController",
+  "title": "分类",
+  "imageName": "TabBar_category_23x23_"
+  },
+  {
+  "vcName": "MineViewController",
+  "title": "我",
+  "imageName": "TabBar_me_boy_23x23_"
+  }
+  ]
